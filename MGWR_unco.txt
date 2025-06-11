@@ -1,0 +1,99 @@
+================================================================================
+MGWR Version: 2.2.1
+Released on: 03/20/2020
+Source code is available at: https://github.com/pysal/mgwr
+Development Team: Ziqi Li, Taylor Oshan, Stewart Fotheringham, Wei Kang, 
+Levi Wolf, Hanchen Yu, Mehak Sachdeva, and Sarah Bardin
+Spatial Analysis Research Center (SPARC)
+Arizona State University, Tempe, USA
+================================================================================
+Model type:                                                             Gaussian
+Number of observations:                                                     7388
+Number of covariates:                                                         11
+Dependent variable:                                                       cs2020
+Variable standardization:                                                     On
+Total runtime:                                                           8:09:59
+
+Global Regression Results
+--------------------------------------------------------------------------------
+Residual sum of squares:                                                4685.671
+Log-likelihood:                                                        -8801.063
+AIC:                                                                   17624.125
+AICc:                                                                  17626.167
+R2:                                                                        0.366
+Adj. R2:                                                                   0.365
+
+Variable                                   Est.         SE  t(Est/SE)    p-value
+------------------------------------ ---------- ---------- ---------- ----------
+Intercept                                 0.000      0.009      0.000      1.000
+tem                                      -0.191      0.015    -13.057      0.000
+center                                   -0.056      0.011     -5.138      0.000
+gdp                                       0.108      0.022      4.833      0.000
+highway                                  -0.016      0.012     -1.336      0.182
+pop                                      -0.183      0.023     -7.961      0.000
+pre                                       0.367      0.010     37.052      0.000
+railway                                  -0.041      0.011     -3.709      0.000
+river                                     0.082      0.011      7.512      0.000
+road                                      0.047      0.012      4.047      0.000
+slope                                     0.241      0.013     18.704      0.000
+
+Multiscale Geographically Weighted Regression (MGWR) Results
+--------------------------------------------------------------------------------
+Coordinates type:                                                      Projected
+Spatial kernel:                                                Adaptive bisquare
+Criterion for optimal bandwidth:                                            AICc
+Score of change (SOC) type:                                          Smoothing f
+Termination criterion for MGWR:                                          1.0e-05
+Number of iterations used:                                                   200
+
+MGWR bandwidths
+--------------------------------------------------------------------------------
+Variable                  Bandwidth      ENP_j   Adj t-val(95%)            DoD_j
+Intercept                   294.000     17.190            2.978            0.681
+tem                         198.000     46.238            3.270            0.570
+center                      102.000    142.756            3.577            0.443
+gdp                         443.000      8.169            2.742            0.764
+highway                    1370.000      6.763            2.679            0.785
+pop                          47.000    296.548            3.764            0.361
+pre                         102.000    100.955            3.485            0.482
+railway                    7387.000      1.084            1.994            0.991
+river                      1560.000     10.455            2.822            0.737
+road                       2126.000      7.754            2.725            0.770
+slope                       423.000     31.214            3.157            0.614
+
+Diagnostic Information
+--------------------------------------------------------------------------------
+Residual sum of squares:                                                 685.159
+Effective number of parameters (trace(S)):                               669.124
+Degree of freedom (n - trace(S)):                                       6718.876
+Sigma estimate:                                                            0.319
+Log-likelihood:                                                        -1698.927
+Degree of Dependency (DoD):                                                0.539
+AIC:                                                                    4738.103
+AICc:                                                                   4872.015
+BIC:                                                                    9367.061
+R2:                                                                        0.907
+Adj. R2:                                                                   0.898
+
+Summary Statistics For MGWR Parameter Estimates
+--------------------------------------------------------------------------------
+Variable                        Mean        STD        Min     Median        Max
+--------------------      ---------- ---------- ---------- ---------- ----------
+Intercept                      0.167      0.433     -0.827      0.150      1.012
+tem                           -0.551      0.267     -1.208     -0.611      0.198
+center                         0.029      0.116     -0.330      0.018      0.724
+gdp                            0.391      0.749     -0.293      0.159      3.644
+highway                       -0.062      0.041     -0.149     -0.058      0.015
+pop                           -0.462      1.316     -8.848     -0.177      4.908
+pre                            0.314      0.317     -0.526      0.241      2.212
+railway                       -0.036      0.001     -0.039     -0.036     -0.034
+river                         -0.001      0.020     -0.054     -0.001      0.038
+road                           0.019      0.019     -0.029      0.024      0.064
+slope                          0.097      0.077     -0.110      0.088      0.359
+================================================================================
+Acknowledgement:
+We acknowledge the support of the National Science Foundation under Award 1758786 
+from the Geography and Spatial Sciences Program to A. S. Fotheringham which 
+enabled this software to be written and made freely available.
+================================================================================
+
